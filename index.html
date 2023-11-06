@@ -5,21 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <title>Rosa events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="/" class="font-inter">Accueil</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="flex h-[100px] justify-between items-center max-w-[90rem] px-[4.5rem] mx-auto">
+      <div>
+        <a href="#">Rosa Events</a>
+      </div>
+      <div class="flex items-center space-x-12">
+        <nav>
+          <ul class="flex items-center space-x-12">
+            <li>
+              <a href="/" class="font-medium">
+                <span>Accueil</span>
+              </a>
+            </li>
+            <li>
+              <span class="font-medium">Mes prestations</span>
+              <ul class="hidden">
+                <li>
+                  <a href="#" class="font-medium">Mariages</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium">Autres évènements</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <span class="block relative h-[24px] w-[1px] before:absolute before:w-full before:h-full before:bg-navy before:top-0 before:left-0"></span>
+        <div>
+          <a href="/contact" class="group inline-flex px-6 py-3 text-cta font-noto border-navy border rounded-full relative after:absolute after:top-0 after:-translate-x-full after:left-0 after:w-full after:h-full after:bg-navy after:z-10 after:transition after:duration-300 after:ease-in-out hover:after:translate-x-0 overflow-hidden">
+            <span class="relative z-20 group-hover:text-white transition duration-300 ease-in-out">Me contacter</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
-  <main>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <main class="py-16">
+    <div class="max-w-[90rem] px-[4.5rem] mx-auto">
+      <p class="text-title-2 font-noto font-thin">Fairfield Farmhouse Baths, Mud & Laundry</p>
+      <p class="mt-6 font-regular">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, dolores necessitatibus illo, alias reiciendis totam veniam qui animi deserunt tempora voluptatem? Nostrum maxime at consectetur voluptatum earum facere perferendis aspernatur?
+      </p>
+   </div>
   </main>
   <footer>
     <nav>

@@ -4,17 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'honey': '#a66908',
+        'honey': '#a4936b',
         'navy': '#001B42',
         'grey': '#595959',
         'tan': '#e0e0dc',
         'blue': '#cbd3de',
         'yellow': '#f6e9d4',
+        'black': '#1f1f1f'
       },
     },
     fontFamily: {
       'work': ['Work Sans','Arial', 'sans-serif'],
-      'inter': ['Inter', 'Arial', 'sans-serif']
+      'noto': ['Noto Sans', 'Arial', 'sans-serif']
     },
     fontSize: {
       'title-1': '4rem',
@@ -30,7 +31,7 @@ module.exports = {
       'title-6': '1.125rem',
       'body': '1rem',
       'cta': ['0.9375rem', {
-        fontWeight: '700',
+        fontWeight: '500',
       }],
     }
   },
