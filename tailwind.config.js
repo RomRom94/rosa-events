@@ -4,18 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'honey': '#a4936b',
-        'navy': '#001B42',
-        'grey': '#595959',
-        'tan': '#e0e0dc',
-        'blue': '#cbd3de',
-        'yellow': '#f6e9d4',
+        'green': '#70A9A1',
+        'green-dark': '#436661',
+        'green-light': '#e6f7f5',
+        'grey-text': '#B3A395',
         'black': '#1f1f1f'
       },
     },
     fontFamily: {
       'work': ['Work Sans','Arial', 'sans-serif'],
-      'noto': ['Noto Sans', 'Arial', 'sans-serif']
+      'playfair': ['Playfair Display', 'Arial', 'serif'],
     },
     fontSize: {
       'title-1': '4rem',
