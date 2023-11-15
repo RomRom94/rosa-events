@@ -714,6 +714,14 @@ html {
   width: 100%;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
 .max-w-\[600px\] {
   max-width: 600px;
 }
