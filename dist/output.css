@@ -1015,6 +1015,16 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(31 31 31 / var(--tw-text-opacity));
+}
+
+.text-beige-dark {
+  --tw-text-opacity: 1;
+  color: rgb(184 163 134 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
