@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
-    <title>Rosa events</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Rosa events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="flex h-[100px] justify-between items-center max-w-[90rem] px-[4.5rem] mx-auto">
+  <header class="bg-beige relative w-full border-beige border-b">
+    <div class="max-w-[90rem] px-[4.5rem] mx-auto">
       <div>
-        <a href="#">Rosa Events</a>
+        <a href="/" class="block w-[300px] mx-auto">
+          <img src="./images/logo-rosa-final.png" alt="Rosa events">
+          <span class="sr-only">Rosa events</span>
+        </a>
       </div>
-      <div class="flex items-center space-x-12">
-        <nav>
-          <ul class="flex items-center space-x-12">
-            <li>
-              <a href="/" class="font-medium">
-                <span>Accueil</span>
-              </a>
-            </li>
-            <li>
-              <a href="/mariage.html" class="font-medium underline">
-                <span>Mariage</span>
-              </a>
-            </li>
-            <li>
-              <span class="font-medium">Mes prestations</span>
-              <ul class="hidden">
+      <nav>
+        <ul class="flex justify-center items-center space-x-12">
+          <li>
+            <a href="/" class="font-medium font-playfair underline-offset-4 decoration-2 underline transition ease-linear block py-8">
+              <span>Accueil</span>
+            </a>
+          </li>
+          <li class="group">
+            <span class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent group-hover:decoration-current font-playfair">Mes prestations</span>
+            <nav class="absolute top-full left-0 bg-beige w-full py-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition ease-in-out duration-300">
+              <ul class="flex justify-center items-center space-x-12">
                 <li>
-                  <a href="#" class="font-medium">Mariages</a>
+                  <a href="#" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair">Mariage</a>
                 </li>
                 <li>
-                  <a href="#" class="font-medium">Autres évènements</a>
+                  <a href="#" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair">Évènements</a>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </nav>
-        <span class="block relative h-[24px] w-[1px] before:absolute before:w-full before:h-full before:bg-navy before:top-0 before:left-0"></span>
-        <div>
-          <a href="/contact" class="group inline-flex px-6 py-3 text-cta rounded-full bg-black text-white relative overflow-hidden">
-            <span class="relative z-20 ">Me contacter</span>
-          </a>
-        </div>
-      </div>
+            </nav>
+          </li>
+          <li>
+            <a href="/" class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main class="py-16">
@@ -57,7 +53,6 @@
       <div class="max-w-[90rem] px-[4.5rem] mx-auto">
         <div>
           <div class="relative">
-            <span class="font-allison text-center block absolute left-[50%] -translate-x-[50%] z-10 text-[#A4936B] -translate-y-24 text-[120px]">Amour</span>
             <h1 class="text-title-1 text-center z-20 relative">Mariage</h1>
           </div>
           <p class="mt-6 font-regular max-w-[800px] mx-auto text-center">
@@ -67,88 +62,88 @@
       </div>
     </div>
     <div class="max-w-[90rem] px-[4.5rem] mx-auto">
-        <div>
-          <p class="text-title-3 font-thin mb-8">La formule comprend :</p>
-          <ul class="grid grid-cols-12 gap-x-8 gap-y-10">
-            <li class="col-span-4">
-              <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
-                <h2 class="mb-2 font-medium">Notre premier rendez-vous</h2>
-                <p>
-                  Gratuit et sans engagement, nous réalisons un premier rendez-vous pour nous rencontrer, et découvrir votre souhait de mariage.
-                </p>
-              </div>
-            </li>
-            <li class="col-span-4">
-              <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
-                <h2 class="mb-2 font-medium">L’élaboration de votre mariage</h2>
-                <p>
-                  Parlons de votre mariage et établissons une feuille de route : date et lieu, thèmes et
-                  inspirations, idées de lieux de réception, type de cérémonie, nombre de convives,
-                  budget, décoration…
-                </p>
-              </div>
-            </li>
-            <li class="col-span-4">
-              <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
-                <h2 class="mb-2 font-medium">Le devis</h2>
-                <p>
-                  Nous établissons un devis sans engagement dans le respect de votre budget.
-                </p>
-              </div>
-            </li>
-            <li class="col-span-4">
-              <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
-                <h2 class="mb-2 font-medium">La recherche et la visite d’un lieu unique</h2>
-                <p>
-                  La première étape de l’organisation de votre mariage : le lieu.
-                  Après écoute de vos attentes, nous réfléchissons ensemble sur les lieux
-                  correspondant à votre recherche et à votre budget.
-                  Nous vous accompagnons dans les visites et vous conseillons dans votre choix final,
-                  jusqu’à la réservation définitive.
-                </p>
-              </div>
-            </li>
-            <li class="col-span-4">
-              <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
-                <h2 class="mb-2 font-medium">La scénographie et la décoration de votre mariage</h2>
-                <p>
-                  La décoration de mariage est aujourd’hui incontournable, il est donc nécessaire d’avoir une proposition complète, cohérente et en parfaite harmonie. Nous réalisons un wedding book, pour créer avec vous l’univers et l’ambiance de votre mariage.
-                </p>
-              </div>
-            </li>
-            <li class="col-span-4">
-              <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
-                <h2 class="mb-2 font-medium">La sélection des prestataires</h2>
-                <p>
-                  Tout mariage fait appel à un grand nombre de prestataires dans des domaines très
-                  variés.
-                  Il est essentiel de les sélectionnés avec soin, pour vous garantir un événement à la
-                  hauteur de vos attentes et en respectant votre budget.
-                  Nous vous proposons des prestataires tels que : traiteur, dj, animations, photographe
-                  et vidéo, location de véhicules de prestige, coiffure et beauté, fleuriste …
-                  Nous nous chargeons de négocier pour vous les meilleurs tarifs avec chacun d’entre
-                  eux, et vous accompagner jusqu’à la signature des contrats de prestations.
-                </p>
-              </div>
-            </li>
-            <li class="col-span-4">
-              <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
-                <h2 class="mb-2 font-medium">Le suivi jusqu’au Jour J</h2>
-                <p>
-                  Tout au long de la préparation de votre mariage, nous planifierons des rendez-vous réguliers. Ces rendez-vous permettent de répondre à toutes les questions que vous vous poserez, et à ajuster certains détails de l’organisation. Nous élaborons ensemble le dérouler du mariage.
-                </p>
-              </div>
-            </li>
-            <li class="col-span-4">
-              <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
-                <h2 class="mb-2 font-medium">La coordination du Jour J</h2>
-                <p>
-                  Je serais présente tout au long de la journée pour coordonner les différents prestataires. Gérer et garantir le bon déroulement de votre mariage selon le planning prévu.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div>
+        <p class="text-title-3 font-thin mb-8">La formule comprend :</p>
+        <ul class="grid grid-cols-12 gap-x-8 gap-y-10">
+          <li class="col-span-4">
+            <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
+              <h2 class="mb-2 font-medium">Notre premier rendez-vous</h2>
+              <p>
+                Gratuit et sans engagement, nous réalisons un premier rendez-vous pour nous rencontrer, et découvrir votre souhait de mariage.
+              </p>
+            </div>
+          </li>
+          <li class="col-span-4">
+            <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
+              <h2 class="mb-2 font-medium">L’élaboration de votre mariage</h2>
+              <p>
+                Parlons de votre mariage et établissons une feuille de route : date et lieu, thèmes et
+                inspirations, idées de lieux de réception, type de cérémonie, nombre de convives,
+                budget, décoration…
+              </p>
+            </div>
+          </li>
+          <li class="col-span-4">
+            <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
+              <h2 class="mb-2 font-medium">Le devis</h2>
+              <p>
+                Nous établissons un devis sans engagement dans le respect de votre budget.
+              </p>
+            </div>
+          </li>
+          <li class="col-span-4">
+            <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
+              <h2 class="mb-2 font-medium">La recherche et la visite d’un lieu unique</h2>
+              <p>
+                La première étape de l’organisation de votre mariage : le lieu.
+                Après écoute de vos attentes, nous réfléchissons ensemble sur les lieux
+                correspondant à votre recherche et à votre budget.
+                Nous vous accompagnons dans les visites et vous conseillons dans votre choix final,
+                jusqu’à la réservation définitive.
+              </p>
+            </div>
+          </li>
+          <li class="col-span-4">
+            <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
+              <h2 class="mb-2 font-medium">La scénographie et la décoration de votre mariage</h2>
+              <p>
+                La décoration de mariage est aujourd’hui incontournable, il est donc nécessaire d’avoir une proposition complète, cohérente et en parfaite harmonie. Nous réalisons un wedding book, pour créer avec vous l’univers et l’ambiance de votre mariage.
+              </p>
+            </div>
+          </li>
+          <li class="col-span-4">
+            <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
+              <h2 class="mb-2 font-medium">La sélection des prestataires</h2>
+              <p>
+                Tout mariage fait appel à un grand nombre de prestataires dans des domaines très
+                variés.
+                Il est essentiel de les sélectionnés avec soin, pour vous garantir un événement à la
+                hauteur de vos attentes et en respectant votre budget.
+                Nous vous proposons des prestataires tels que : traiteur, dj, animations, photographe
+                et vidéo, location de véhicules de prestige, coiffure et beauté, fleuriste …
+                Nous nous chargeons de négocier pour vous les meilleurs tarifs avec chacun d’entre
+                eux, et vous accompagner jusqu’à la signature des contrats de prestations.
+              </p>
+            </div>
+          </li>
+          <li class="col-span-4">
+            <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
+              <h2 class="mb-2 font-medium">Le suivi jusqu’au Jour J</h2>
+              <p>
+                Tout au long de la préparation de votre mariage, nous planifierons des rendez-vous réguliers. Ces rendez-vous permettent de répondre à toutes les questions que vous vous poserez, et à ajuster certains détails de l’organisation. Nous élaborons ensemble le dérouler du mariage.
+              </p>
+            </div>
+          </li>
+          <li class="col-span-4">
+            <div class="p-4 rounded-[0.625rem] [box-shadow:_20px_20px_30px_rgba(0,_0,_0,_.05)] bg-white">
+              <h2 class="mb-2 font-medium">La coordination du Jour J</h2>
+              <p>
+                Je serais présente tout au long de la journée pour coordonner les différents prestataires. Gérer et garantir le bon déroulement de votre mariage selon le planning prévu.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </main>
   <footer>
