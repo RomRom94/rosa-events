@@ -811,6 +811,10 @@ html {
   overflow: hidden;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded-sm {
   border-radius: 0.125rem;
 }
@@ -942,10 +946,6 @@ html {
 
 .text-title-4 {
   font-size: 1.5rem;
-}
-
-.text-title-5 {
-  font-size: 1.25rem;
 }
 
 .text-title-6 {
@@ -1106,6 +1106,10 @@ html {
   visibility: visible;
 }
 
+.group\/item:hover .group-hover\/item\:visible {
+  visibility: visible;
+}
+
 .group:hover .group-hover\:bg-beige-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(184 163 134 / var(--tw-bg-opacity));
@@ -1115,6 +1119,14 @@ html {
   text-decoration-color: currentColor;
 }
 
+.group\/item:hover .group-hover\/item\:decoration-current {
+  text-decoration-color: currentColor;
+}
+
 .group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group\/item:hover .group-hover\/item\:opacity-100 {
   opacity: 1;
 }
