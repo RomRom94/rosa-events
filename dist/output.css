@@ -765,6 +765,10 @@ html {
   cursor: pointer;
 }
 
+.touch-none {
+  touch-action: none;
+}
+
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }

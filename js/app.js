@@ -10,9 +10,10 @@ const handleMenuMobile = () => {
 
 const handleOverflowBody = () => {
   const body = document.querySelector('body')
+  const html = document.querySelector('html')
 
   body.classList.toggle('overflow-hidden')
-  body.classList.toggle('h-full')
+  html.classList.toggle('overflow-hidden')
 }
 
 const triggerMenuBurger = () => {
