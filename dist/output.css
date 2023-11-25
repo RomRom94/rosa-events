@@ -1447,6 +1447,11 @@ html {
     padding-bottom: 2.5rem;
   }
 
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:pl-0 {
     padding-left: 0px;
   }
