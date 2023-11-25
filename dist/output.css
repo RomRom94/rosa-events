@@ -1261,6 +1261,10 @@ html {
     top: 0px;
   }
 
+  .lg\:left-full {
+    left: 100%;
+  }
+
   .lg\:z-50 {
     z-index: 50;
   }
@@ -1457,4 +1461,14 @@ html {
   .xs\:justify-center {
     justify-content: center;
   }
+}
+
+.\[\&\.is-open\]\:translate-x-0.is-open {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.\[\&\.is-open\]\:-translate-x-full.is-open {
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
