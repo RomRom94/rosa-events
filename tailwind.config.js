@@ -34,6 +34,13 @@ module.exports = {
       'cta': ['0.9375rem', {
         fontWeight: '500',
       }],
+    },
+    screens: {
+      xl: { max: "1280px" },
+      lg: { max: "1024px" },
+      md: { max: "768px" },
+      sm: { max: "640px" },
+      xs: { max: "440px" }
     }
   },
   plugins: [],
