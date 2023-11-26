@@ -1001,6 +1001,10 @@ html {
   font-size: 1.125rem;
 }
 
+.text-title-4-mobile {
+  font-size: 1.25rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
