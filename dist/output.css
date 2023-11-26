@@ -1257,6 +1257,10 @@ html {
     position: fixed;
   }
 
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:relative {
     position: relative;
   }
@@ -1271,6 +1275,10 @@ html {
 
   .lg\:left-full {
     left: 100%;
+  }
+
+  .lg\:top-full {
+    top: 100%;
   }
 
   .lg\:z-50 {
@@ -1355,6 +1363,10 @@ html {
 
   .lg\:pl-8 {
     padding-left: 2rem;
+  }
+
+  .lg\:pt-\[9\.75rem\] {
+    padding-top: 9.75rem;
   }
 
   .lg\:text-title-1-mobile {
@@ -1467,6 +1479,10 @@ html {
 
   .md\:pl-0 {
     padding-left: 0px;
+  }
+
+  .md\:pt-\[8\.75rem\] {
+    padding-top: 8.75rem;
   }
 
   .md\:text-center {
