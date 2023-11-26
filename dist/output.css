@@ -1253,6 +1253,10 @@ html {
 }
 
 @media (max-width: 1024px) {
+  .lg\:visible {
+    visibility: visible;
+  }
+
   .lg\:fixed {
     position: fixed;
   }
@@ -1297,8 +1301,16 @@ html {
     grid-column: span 12 / span 12;
   }
 
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:h-\[92px\] {
@@ -1372,6 +1384,12 @@ html {
     margin-bottom: calc(4rem * var(--tw-space-y-reverse));
   }
 
+  .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:bg-beige {
     --tw-bg-opacity: 1;
     background-color: rgb(219 208 198 / var(--tw-bg-opacity));
@@ -1418,6 +1436,14 @@ html {
 
   .lg\:text-title-4-mobile {
     font-size: 1.25rem;
+  }
+
+  .lg\:decoration-current {
+    text-decoration-color: currentColor;
+  }
+
+  .lg\:opacity-100 {
+    opacity: 1;
   }
 
   .lg\:after\:translate-y-8::after {
