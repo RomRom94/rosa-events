@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
-  <title>Rosa events - Évènements organisation complète</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <title>Rosa events - Évènements</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,65 +12,62 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header class="bg-beige relative w-full border-beige border-b">
-    <div class="max-w-[90rem] px-[4.5rem] mx-auto">
+  <header class="bg-beige relative w-full border-beige border-b lg:py-2 lg:h-[92px] lg:flex lg:items-center lg:fixed lg:top-0 lg:z-50">
+    <div class="w-full max-w-[90rem] px-[4.5rem] xl:px-12 lg:px-6 md:px-4 mx-auto lg:flex justify-between items-center">
       <div>
-        <a href="/" class="block w-[300px] mx-auto">
-          <img src="../images/logo-rosa-events.png" alt="Rosa events">
+        <a href="/" class="block w-[300px] lg:w-[100px] mx-auto">
+          <img src="./images/logo-rosa-events.png" alt="Rosa events">
           <span class="sr-only">Rosa events</span>
         </a>
       </div>
-      <nav>
-        <ul class="flex justify-center items-center space-x-12">
-          <li>
-            <a href="/" class="font-playfair underline-offset-4 decoration-2 decoration-transparent hover:decoration-current underline transition ease-linear block py-8">
+      <nav class="lg:absolute lg:top-full lg:left-full lg:bg-beige lg:w-full lg:h-[calc(100vh-92px)] lg:z-50 lg:flex lg:items-center lg:justify-center js-menu transition duration-300 ease-linear [&.is-open]:-translate-x-full">
+        <ul class="flex justify-center items-center space-x-12 lg:flex-col lg:space-x-0">
+          <li class="lg:w-full lg:text-center lg:border-b-2 lg:border-white">
+            <a href="/" class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair">
               <span>Accueil</span>
             </a>
           </li>
-          <li class="group">
-            <span class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline transition ease-linear decoration-current font-playfair">Mes prestations</span>
-            <nav class="absolute top-full left-0 bg-beige w-full py-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition ease-in-out duration-300">
-              <ul class="flex justify-center items-center space-x-12">
-                <li class="group/item relative">
+          <li class="group lg:relative lg:w-full lg:border-b-2 lg:border-white">
+            <span class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent group-hover:decoration-current font-playfair lg:text-center lg:decoration-current lg:hidden">Mes prestations</span>
+            <nav class="absolute lg:relative lg:opacity-100 top-full left-0 bg-beige w-full py-4 z-50 opacity-0 invisible lg:visible group-hover:opacity-100 group-hover:visible transition ease-in-out duration-300 lg:py-8">
+              <ul class="flex justify-center items-center space-x-12 lg:flex-col lg:space-x-0 lg:space-y-8">
+                <li class="group/item relative lg:border-b-2 lg:border-white">
                   <div>
-                    <h2 class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent group-hover/item:decoration-current font-playfair">Mariage</h2>
-                    <nav class="absolute top-full left-0 bg-beige py-4 z-50 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition ease-in-out duration-300 px-4">
+                    <h2 class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent group-hover/item:decoration-current font-playfair lg:text-center lg:decoration-current lg:py-0">Mariage</h2>
+                    <nav class="absolute lg:relative lg:opacity-100 lg:visible top-full left-0 bg-beige py-4 z-50 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition ease-in-out duration-300 px-4 lg:pb-8">
                       <ul>
                         <li>
-                          <a href="../mariage/organisation-complete.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair whitespace-nowrap">Organisation complète</a>
+                          <a href="./mariage/organisation-complete.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair whitespace-nowrap lg:text-center">Organisation complète</a>
                         </li>
                         <li>
-                          <a href="../mariage/coordination-jour-j.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair whitespace-nowrap">Coordination jour J</a>
+                          <a href="./mariage/coordination-jour-j.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair whitespace-nowrap lg:text-center">Coordination jour J</a>
                         </li>
                       </ul>
                     </nav>
                   </div>
                 </li>
-                <li class="group/item relative">
-                  <div>
-                    <h2 class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-current font-playfair">Évènements</h2>
-                    <nav class="absolute top-full left-0 bg-beige py-4 z-50 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition ease-in-out duration-300 px-4">
-                      <ul>
-                        <li>
-                          <a href="./organisation-complete.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-current font-playfair whitespace-nowrap">Organisation complète</a>
-                        </li>
-                        <li>
-                          <a href="./decoration-complete.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair whitespace-nowrap">Décoration complète</a>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
+                <li>
+                  <a href="/evenements.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline decoration-current font-playfair whitespace-nowrap lg:text-center lg:decoration-transparent lg:font-bold">
+                    <span>Évènements</span>
+                  </a>
                 </li>
               </ul>
             </nav>
           </li>
-          <li>
-            <a href="../contact.html" class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair">
+          <li class="lg:w-full lg:text-center">
+            <a href="./contact.html" class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair">
               <span>Contact</span>
             </a>
           </li>
         </ul>
       </nav>
+      <div class="rounded-sm bg-white mix-blend-luminosity w-12 h-12 justify-center items-center hidden lg:flex js-burger-menu group">
+        <button type="button" class="w-7 h-7 p-[0.1875rem] flex flex-col justify-around items-center">
+          <span class="w-full h-[2px] rounded-sm bg-black transition ease-in-out duration-300 group-[.is-open]:translate-y-[6px] group-[.is-open]:-rotate-45"></span>
+          <span class="w-[60%] h-[2px] rounded-sm bg-black transition ease-in-out duration-300 group-[.is-open]:w-0 group-[.is-open]:h-0"></span>
+          <span class="w-full h-[2px] rounded-sm bg-black transition ease-in-out duration-300 group-[.is-open]:-translate-y-[7.5px] group-[.is-open]:rotate-45"></span>
+        </button>
+      </div>
     </div>
   </header>
   <main class="py-16 md:py-12 md:pt-[8.75rem] z-50 space-y-16 md:space-y-12 lg:pt-[9.75rem]">
@@ -104,7 +101,7 @@
       <div class="max-w-[1000px] mx-auto">
         <div class="grid grid-cols-12 gap-x-8 lg:gap-y-8">
           <div class="col-span-6 lg:col-span-12 lg:order-2">
-            <img src="../images/wedding/wedding-coordination-j.jpg" alt="Coordination jour j" class="block object-cover w-full">
+            <img src="../images/events/event-complete.jpg" alt="Évènements organisation complète" class="block object-cover w-full">
           </div>
           <div class="col-span-6 lg:col-span-12 lg:order-1">
             <ul class="space-y-16">
@@ -159,6 +156,60 @@
         <p class="text-center text-title-4 lg:text-title-4-mobile font-playfair">Tarif sur devis à partir de 450€.</p>
       </div>
     </div>
+    <div class="max-w-[90rem] px-[4.5rem] xl:px-12 lg:px-6 md:px-4 mx-auto">
+      <div class="text-center mb-8 md:mb-6">
+        <div class="text-center">
+          <a href="/contact" class="group inline-flex px-4 py-2 bg-beige-light relative overflow-hidden rounded-sm uppercase text-[12px] text-beige-dark">
+            <span class="relative z-20 ">service</span>
+          </a>
+        </div>
+        <div class="relative">
+          <span class="absolute top-[50%] -translate-y-[50%] w-full h-[1px] bg-beige left-0 z-10"></span>
+          <h2 class="mb-4 text-title-2 lg:text-title-2-mobile text-center font-playfair bg-white relative z-20 inline-block px-8 lg:px-4">Décoration complète</h2>
+        </div>
+        <p class="max-w-[800px] mx-auto">
+          La formule comprend :
+        </p>
+      </div>
+      <div class="max-w-[1000px] mx-auto">
+        <div class="grid grid-cols-12 gap-x-8 lg:gap-y-8">
+          <div class="col-span-6 lg:col-span-12 lg:order-2">
+            <img src="../images/events/event-decoration.jpg" alt="Évènements décoration complète" class="block object-cover w-full">
+          </div>
+          <div class="col-span-6 lg:col-span-12 lg:order-1">
+            <ul class="space-y-16">
+              <li class="relative after:absolute after:w-[300px] after:h-[1px] after:bg-beige after:top-full after:left-[50%] after:-translate-x-[50%] after:translate-y-8">
+                <div>
+                  <h3 class="text-title-6 font-playfair text-center">Un rendez-vous, pour en savoir plus sur votre évènements, lieu et date, vos envies et
+                    inspiration de décorations</h3>
+                </div>
+              </li>
+              <li class="relative after:absolute after:w-[300px] after:h-[1px] after:bg-beige after:top-full after:left-[50%] after:-translate-x-[50%] after:translate-y-8">
+                <div>
+                  <h3 class="text-title-6 font-playfair text-center">Un devis sans engagement en fonction de votre budget</h3>
+                </div>
+              </li>
+              <li class="relative after:absolute after:w-[300px] after:h-[1px] after:bg-beige after:top-full after:left-[50%] after:-translate-x-[50%] after:translate-y-8">
+                <div>
+                  <h3 class="text-title-6 font-playfair text-center">Un rendez-vous avant le jour j pour parler ensemble de la décoration de votre évènement et ajuster les derniers détails
+                  </h3>
+                </div>
+              </li>
+              <li class="relative after:absolute after:w-[300px] after:h-[1px] after:bg-beige after:top-full after:left-[50%] after:-translate-x-[50%] after:translate-y-8">
+                <div>
+                  <h3 class="text-title-6 font-playfair text-center">Ma présence le jour j pour décorer votre lieu de réception</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-beige">
+      <div class="max-w-[90rem] px-[4.5rem] xl:px-12 lg:px-6 md:px-4 mx-auto py-8">
+        <p class="text-center text-title-4 lg:text-title-4-mobile font-playfair">Tarif sur devis à partir de 150€.</p>
+      </div>
+    </div>
   </main>
   <footer class="py-8 bg-beige">
     <div class="max-w-[800px] px-[4.5rem] mx-auto space-y-6">
@@ -201,5 +252,6 @@
       </div>
     </div>
   </footer>
+  <script src="./js/app.js"></script>
 </body>
 </html>

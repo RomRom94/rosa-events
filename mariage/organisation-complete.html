@@ -22,49 +22,39 @@
       </div>
       <nav class="lg:absolute lg:top-full lg:left-full lg:bg-beige lg:w-full lg:h-[calc(100vh-92px)] lg:z-50 lg:flex lg:items-center lg:justify-center js-menu transition duration-300 ease-linear [&.is-open]:-translate-x-full">
         <ul class="flex justify-center items-center space-x-12 lg:flex-col lg:space-x-0">
-          <li>
-            <a href="/" class="font-playfair underline-offset-4 decoration-2 decoration-transparent hover:decoration-current underline transition ease-linear block py-8">
+          <li class="lg:w-full lg:text-center lg:border-b-2 lg:border-white">
+            <a href="/" class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair">
               <span>Accueil</span>
             </a>
           </li>
-          <li class="group lg:relative">
-            <span class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline transition ease-linear decoration-current font-playfair">Mes prestations</span>
-            <nav class="absolute top-full left-0 bg-beige w-full py-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition ease-in-out duration-300">
-              <ul class="flex justify-center items-center space-x-12">
-                <li class="group/item relative">
+          <li class="group lg:relative lg:w-full lg:border-b-2 lg:border-white">
+            <span class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline decoration-current font-playfair lg:text-center lg:decoration-current lg:hidden">Mes prestations</span>
+            <nav class="absolute lg:relative lg:opacity-100 top-full left-0 bg-beige w-full py-4 z-50 opacity-0 invisible lg:visible group-hover:opacity-100 group-hover:visible transition ease-in-out duration-300 lg:py-8">
+              <ul class="flex justify-center items-center space-x-12 lg:flex-col lg:space-x-0 lg:space-y-8">
+                <li class="group/item relative lg:border-b-2 lg:border-white">
                   <div>
-                    <h2 class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-current font-playfair">Mariage</h2>
-                    <nav class="absolute top-full left-0 bg-beige py-4 z-50 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition ease-in-out duration-300 px-4">
+                    <h2 class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline decoration-current font-playfair lg:text-center lg:decoration-current lg:py-0">Mariage</h2>
+                    <nav class="absolute lg:relative lg:opacity-100 lg:visible top-full left-0 bg-beige py-4 z-50 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition ease-in-out duration-300 px-4 lg:pb-8">
                       <ul>
                         <li>
-                          <a href="./organisation-complete.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-current font-playfair whitespace-nowrap">Organisation complète</a>
+                          <a href="./organisation-complete.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline decoration-current font-playfair whitespace-nowrap lg:text-center lg:decoration-transparent lg:font-bold">Organisation complète</a>
                         </li>
                         <li>
-                          <a href="./coordination-jour-j.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair whitespace-nowrap">Coordination jour J</a>
+                          <a href="./coordination-jour-j.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair whitespace-nowrap lg:text-center">Coordination jour J</a>
                         </li>
                       </ul>
                     </nav>
                   </div>
                 </li>
-                <li class="group/item relative">
-                  <div>
-                    <h2 class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent group-hover/item:decoration-current font-playfair">Évènements</h2>
-                    <nav class="absolute top-full left-0 bg-beige py-4 z-50 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition ease-in-out duration-300 px-4">
-                      <ul>
-                        <li>
-                          <a href="../evenements/organisation-complete.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair whitespace-nowrap">Organisation complète</a>
-                        </li>
-                        <li>
-                          <a href="../evenements/decoration-complete.html" class="cursor-pointer block py-2 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair whitespace-nowrap">Décoration complète</a>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
+                <li>
+                  <a href="../evenements.html" class="font-playfair underline-offset-4 decoration-2 decoration-transparent hover:decoration-current underline transition ease-linear">
+                    <span>Évènements</span>
+                  </a>
                 </li>
               </ul>
             </nav>
           </li>
-          <li>
+          <li class="lg:w-full lg:text-center">
             <a href="../contact.html" class="cursor-pointer block py-8 underline-offset-4 decoration-2 underline transition ease-linear decoration-transparent hover:decoration-current font-playfair">
               <span>Contact</span>
             </a>
