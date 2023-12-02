@@ -1524,6 +1524,10 @@ html {
     flex-wrap: nowrap;
   }
 
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -1569,6 +1573,10 @@ html {
 
   .md\:pt-\[8\.75rem\] {
     padding-top: 8.75rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
   }
 
   .md\:text-center {
