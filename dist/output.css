@@ -613,6 +613,26 @@ html {
   grid-column: span 8 / span 8;
 }
 
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-start-5 {
+  grid-column-start: 5;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-start-6 {
+  grid-column-start: 6;
+}
+
+.col-start-7 {
+  grid-column-start: 7;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -785,6 +805,14 @@ html {
   cursor: pointer;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
@@ -861,6 +889,12 @@ html {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1097,6 +1131,14 @@ html {
 
 .ease-linear {
   transition-timing-function: linear;
+}
+
+.marker\:text-beige-dark *::marker {
+  color: rgb(184 163 134 );
+}
+
+.marker\:text-beige-dark::marker {
+  color: rgb(184 163 134 );
 }
 
 .before\:absolute::before {
@@ -1470,6 +1512,14 @@ html {
     grid-column: span 12 / span 12;
   }
 
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .md\:col-start-1 {
+    grid-column-start: 1;
+  }
+
   .md\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -1492,6 +1542,10 @@ html {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-\[22\.625rem\] {
+    width: 22.625rem;
   }
 
   .md\:max-w-full {
