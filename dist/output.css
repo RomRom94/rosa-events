@@ -597,10 +597,6 @@ html {
   grid-column: span 12 / span 12;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
@@ -613,20 +609,8 @@ html {
   grid-column: span 8 / span 8;
 }
 
-.col-start-2 {
-  grid-column-start: 2;
-}
-
-.col-start-5 {
-  grid-column-start: 5;
-}
-
 .col-start-3 {
   grid-column-start: 3;
-}
-
-.col-start-6 {
-  grid-column-start: 6;
 }
 
 .col-start-7 {
@@ -661,10 +645,6 @@ html {
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
 }
 
 .mt-4 {
@@ -735,10 +715,6 @@ html {
   height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -775,20 +751,12 @@ html {
   max-width: 1000px;
 }
 
-.max-w-\[600px\] {
-  max-width: 600px;
-}
-
 .max-w-\[800px\] {
   max-width: 800px;
 }
 
 .max-w-\[90rem\] {
   max-width: 90rem;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .-translate-x-\[50\%\] {
@@ -873,10 +841,10 @@ html {
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
-.space-y-32 > :not([hidden]) ~ :not([hidden]) {
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(8rem * var(--tw-space-y-reverse));
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
@@ -889,18 +857,6 @@ html {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.space-y-12 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1019,10 +975,6 @@ html {
 
 .text-center {
   text-align: center;
-}
-
-.text-justify {
-  text-align: justify;
 }
 
 .font-playfair {
@@ -1190,12 +1142,6 @@ html {
 .after\:-translate-x-\[50\%\]::after {
   content: var(--tw-content);
   --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.after\:translate-y-16::after {
-  content: var(--tw-content);
-  --tw-translate-y: 4rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1399,12 +1345,6 @@ html {
     margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-y-16 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(4rem * var(--tw-space-y-reverse));
-  }
-
   .lg\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1497,12 +1437,6 @@ html {
   .lg\:opacity-100 {
     opacity: 1;
   }
-
-  .lg\:after\:translate-y-8::after {
-    content: var(--tw-content);
-    --tw-translate-y: 2rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
 }
 
 @media (max-width: 768px) {
@@ -1518,20 +1452,8 @@ html {
     grid-column: span 12 / span 12;
   }
 
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
-  .md\:col-start-1 {
-    grid-column-start: 1;
-  }
-
   .md\:mb-6 {
     margin-bottom: 1.5rem;
-  }
-
-  .md\:ml-0 {
-    margin-left: 0px;
   }
 
   .md\:mt-6 {
@@ -1542,16 +1464,12 @@ html {
     display: flex;
   }
 
-  .md\:w-64 {
-    width: 16rem;
+  .md\:w-\[22\.625rem\] {
+    width: 22.625rem;
   }
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[22\.625rem\] {
-    width: 22.625rem;
   }
 
   .md\:max-w-full {
@@ -1627,10 +1545,6 @@ html {
 
   .md\:pt-\[8\.75rem\] {
     padding-top: 8.75rem;
-  }
-
-  .md\:text-center {
-    text-align: center;
   }
 }
 
