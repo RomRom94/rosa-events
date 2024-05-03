@@ -1310,12 +1310,12 @@ html {
     width: 100px;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:w-\[80px\] {
     width: 80px;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:flex-col {
