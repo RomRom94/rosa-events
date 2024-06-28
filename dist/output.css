@@ -1306,10 +1306,6 @@ html {
     height: calc(100vh - 92px);
   }
 
-  .lg\:w-\[100px\] {
-    width: 100px;
-  }
-
   .lg\:w-\[80px\] {
     width: 80px;
   }
